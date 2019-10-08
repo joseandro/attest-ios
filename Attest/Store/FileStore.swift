@@ -12,13 +12,15 @@ import Combine
 class FileStore : ObservableObject {
     @Published var files : [File]
     
+    let KBYTE : Double = 1000;
+    let queue = DispatchQueue(label: "com.attest.file-processing-queue", qos: .userInitiated)
+    
     init(files: [File] = []) {
         self.files = files
         fetchFilesFromDirectory()
     }
     
     private func fetchFilesFromDirectory() {
-        
         // Get the document directory url
         let documentsUrl =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
 
@@ -31,11 +33,17 @@ class FileStore : ObservableObject {
                 let size = try! file.resourceValues(forKeys: [.totalFileAllocatedSizeKey]).totalFileAllocatedSize!
                 let path = file.absoluteURL
                 
-                let file = File(name: filename, size: UInt64(size), path: path)
-                
-                //TODO: Update contains to compare between paths
-                if !files.contains(file) {
-                    files.append(file)
+                let fileToBeAdded = File(name: filename, size: Int64(size), path: path)
+
+                var isFileListed = false
+                for listedFile in self.files {
+                    if listedFile.path == fileToBeAdded.path {
+                        isFileListed = true
+                    }
+                }
+
+                if !isFileListed {
+                    self.files.append(fileToBeAdded)
                 }
             }
         } catch {
@@ -50,8 +58,40 @@ class FileStore : ObservableObject {
             }
         } catch {
             print("Error \(error) when we tried to remove file \(file)")
+            
             //Reload the list when the call above fails
             fetchFilesFromDirectory()
         }
     }
+    
+    
+    public func createFile(name: String,
+                           withSize size:Int64,
+                           completionHandler: @escaping (Double, Bool, Error?) -> Void) {
+        let fileName = NSString(string: name)
+        queue.async {
+            let start = DispatchTime.now()
+            let success = createFileWithCFunction(UnsafeMutablePointer<CChar>(mutating: fileName.utf8String), size)
+            let duration = Double(DispatchTime.now().uptimeNanoseconds - start.uptimeNanoseconds)
+            
+//            var error = NSError(domain:"", code:httpResponse.statusCode, userInfo:nil)
+            DispatchQueue.main.async {
+                //Update files array, needs to happen in the main thread
+                self.fetchFilesFromDirectory()
+                
+                completionHandler(duration, success == 1, nil)
+
+            }
+        }
+    }
+}
+
+extension Int64 {
+    func sizeString(units: ByteCountFormatter.Units = [.useAll], countStyle: ByteCountFormatter.CountStyle = .file) -> String {
+        let bcf = ByteCountFormatter()
+        bcf.allowedUnits = units
+        bcf.countStyle = .file
+
+        return bcf.string(fromByteCount: self)
+     }
 }

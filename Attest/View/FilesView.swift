@@ -9,16 +9,16 @@
 import SwiftUI
 
 struct FilesView: View {
-    @ObservedObject var store = FileStore()
+    @EnvironmentObject var store : FileStore
     @EnvironmentObject var device : Device
     @State private var displayModal: Bool = false
-    
+
     var body: some View {
         NavigationView {
             VStack{
                 if store.files.count > 0 {
                     if device.capacity != nil {
-                        Text("Free disk space: \(device.capacity!)MB")
+                        Text("Free disk space: \(device.capacity!.sizeString())")
                             .padding([.top, .bottom], 10)
                     }
                     List {
@@ -34,7 +34,7 @@ struct FilesView: View {
                         Text("No files yet")
                             .font(.largeTitle)
                         if device.capacity != nil {
-                            Text("Create files to see a list of your Documents folder here. Free disk space: \(device.capacity!)MB")
+                            Text("Create files to see a list of your Documents folder here. Free disk space: \(device.capacity!.sizeString())")
                                 .font(.body)
                                 .lineLimit(3)
                         } else {
@@ -47,7 +47,7 @@ struct FilesView: View {
                     .multilineTextAlignment(.center)
                     .padding([.trailing, .leading], 20)
                     .onTapGesture {
-                        self.addFile()
+                        self.displayModal.toggle()
                     }
                     Spacer()
                 }
@@ -55,26 +55,26 @@ struct FilesView: View {
             }
             .navigationBarTitle(Text("Attest"))
             .navigationBarItems(trailing:
-                Button(action: addFile) {
+                Button(action: {
+                    self.displayModal.toggle()
+                }){
                     Text("Create file")
                 })
             .sheet(isPresented: $displayModal, onDismiss: {
                 print(self.displayModal)
             }) {
                 CreateFileModalView()
+                    .environmentObject(self.device)
+                    .environmentObject(self.store)
             }
-            
         }
     }
-    
-    private func addFile(){
-        print("Create file tapped!")
-        self.displayModal = true
-    }
+
     
     private func delete(at offsets: IndexSet) {
         let fileToBeRemoved : File = store.files.removeLast()
         store.removeFile(file: fileToBeRemoved)
+        self.device.readDeviceProperties()
     }
     
 }
@@ -82,14 +82,17 @@ struct FilesView: View {
 struct FilesViewView_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            FilesView(store: FileStore(files: []))
+            FilesView()
                 .environmentObject(Device())
+                .environmentObject(FileStore(files: []))
             
-            FilesView(store: FileStore(files: testData))
+            FilesView()
                 .environmentObject(Device())
+                .environmentObject(FileStore(files: testData))
             
-            FilesView(store: FileStore(files: testData))
+            FilesView()
                 .environmentObject(Device())
+                .environmentObject(FileStore(files: testData))
                 .environment(\.colorScheme, .dark)
         }
 

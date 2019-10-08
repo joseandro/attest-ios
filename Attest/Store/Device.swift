@@ -13,7 +13,11 @@ class Device : ObservableObject {
     @Published var name : String = ""
     @Published var capacity: Int64? = 0
        
-    init(){
+    init( ){
+        readDeviceProperties()
+    }
+    
+    public func readDeviceProperties() {
         name = getDeviceName()
         capacity = getDeviceCapacity()
     }

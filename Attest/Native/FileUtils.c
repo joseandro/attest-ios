@@ -11,7 +11,7 @@
 #include <string.h>
 int const KBYTE = 1000;
 
-int createFile(char *name, long long sizeInBytes){
+int createFileWithCFunction(char *name, long long sizeInBytes){
     char *home = getenv("HOME");
     char *localFolder = "/Documents/";
     char path[2048];

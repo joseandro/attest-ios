@@ -177,9 +177,9 @@
 		DE92B0F5234A6ADC00466B60 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				DE9857DB234AE9F100E56759 /* CreateFileModalView.swift */,
 				DE92B0C1234A69E600466B60 /* FilesView.swift */,
 				DE23BC21234A9DD500CEE0EB /* FilesCellView.swift */,
-				DE9857DB234AE9F100E56759 /* CreateFileModalView.swift */,
 				DE92B0C8234A69E700466B60 /* LaunchScreen.storyboard */,
 			);
 			path = View;

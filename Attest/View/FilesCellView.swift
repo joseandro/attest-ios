@@ -20,14 +20,14 @@ struct FilesCellView: View {
             
             VStack(alignment: .leading) {
                 Text("\(file.name)")
-                    .font(.title)
-                Text("Size: \(file.size) MB")
+                    .font(.headline)
+//                    .padding()
+                Text("Size: \(file.size.sizeString())")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
-            
+//TODO: Add the sharing functionality
 //            Spacer()
-//
 //            Image(systemName: "square.and.arrow.up")
 //                .padding(.all)
             
