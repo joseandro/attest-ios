@@ -21,11 +21,13 @@ struct FilesCellView: View {
             VStack(alignment: .leading) {
                 Text("\(file.name)")
                     .font(.headline)
-//                    .padding()
+
                 Text("Size: \(file.size.sizeString())")
                     .font(.subheadline)
                     .foregroundColor(.secondary)
             }
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .leading)
+//            Spacer()
 //TODO: Add the sharing functionality
 //            Spacer()
 //            Image(systemName: "square.and.arrow.up")
@@ -33,14 +35,15 @@ struct FilesCellView: View {
             
         }
     }
-    
-    private func removeItem(){
-        print("File removal was requested")
-    }
 }
 
 struct FilesCellView_Previews: PreviewProvider {
     static var previews: some View {
-        FilesCellView(file: testData[0])
+        Group {
+            FilesCellView(file: testData[0])
+            FilesCellView(file: testData[1])
+        }
+        .previewLayout(.fixed(width: 300, height: 70))
+
     }
 }

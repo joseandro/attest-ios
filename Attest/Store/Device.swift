@@ -11,7 +11,7 @@ import Combine
 
 class Device : ObservableObject {
     @Published var name : String = ""
-    @Published var capacity: Int64? = 0
+    @Published var freeCapacity: Int64? = 0
        
     init( ){
         readDeviceProperties()
@@ -19,7 +19,7 @@ class Device : ObservableObject {
     
     public func readDeviceProperties() {
         name = getDeviceName()
-        capacity = getDeviceCapacity()
+        freeCapacity = getDeviceCapacity()
     }
     
     private func getDeviceName() -> String {

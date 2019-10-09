@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct File : Identifiable, Equatable {
+struct File : Identifiable, Equatable, Hashable {
     var id = UUID()
     var name: String
     var size: Int64

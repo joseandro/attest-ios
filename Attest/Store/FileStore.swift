@@ -11,6 +11,7 @@ import Combine
 
 class FileStore : ObservableObject {
     @Published var files : [File]
+    @Published var areFilesBeingCreated : Bool = false
     
     let KBYTE : Double = 1000;
     let queue = DispatchQueue(label: "com.attest.file-processing-queue", qos: .userInitiated)
@@ -68,6 +69,7 @@ class FileStore : ObservableObject {
     public func createFile(name: String,
                            withSize size:Int64,
                            completionHandler: @escaping (Double, Bool, Error?) -> Void) {
+        areFilesBeingCreated = true
         let fileName = NSString(string: name)
         queue.async {
             let start = DispatchTime.now()
@@ -76,6 +78,7 @@ class FileStore : ObservableObject {
             
 //            var error = NSError(domain:"", code:httpResponse.statusCode, userInfo:nil)
             DispatchQueue.main.async {
+                self.areFilesBeingCreated = false
                 //Update files array, needs to happen in the main thread
                 self.fetchFilesFromDirectory()
                 
