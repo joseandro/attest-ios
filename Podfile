@@ -6,7 +6,13 @@ target 'Attest' do
   use_frameworks!
 
   # Pods for Attest
-  #pod 'FBAudienceNetwork'
+  # Pods for PodTest
+  pod 'Fabric', '~> 1.10.2'
+  pod 'Crashlytics', '~> 3.14.0'
+
+  # (Recommended) Pod for Google Analytics
+  pod 'Firebase/Analytics'
+
 
   target 'AttestTests' do
     inherit! :search_paths

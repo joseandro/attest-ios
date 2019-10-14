@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -19,6 +19,7 @@
 		DE92B0D5234A69E700466B60 /* AttestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92B0D4234A69E700466B60 /* AttestTests.swift */; };
 		DE92B0E0234A69E700466B60 /* AttestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92B0DF234A69E700466B60 /* AttestUITests.swift */; };
 		DE92B0F1234A69F900466B60 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE92B0EE234A69F900466B60 /* README.md */; };
+		DEED0DDB2354218C00B77994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEED0DDA2354218C00B77994 /* GoogleService-Info.plist */; };
 		DEFD984023538DB5008B22AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD983F23538DB4008B22AB /* ContentView.swift */; };
 		DEFD9842235395C3008B22AB /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEFD9841235395C3008B22AB /* AllertaStencil-Regular.ttf */; };
 /* End PBXBuildFile section */
@@ -63,6 +64,7 @@
 		DE92B0DF234A69E700466B60 /* AttestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestUITests.swift; sourceTree = "<group>"; };
 		DE92B0E1234A69E700466B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE92B0EE234A69F900466B60 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DEED0DDA2354218C00B77994 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEFD983F23538DB4008B22AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEFD9841235395C3008B22AB /* AllertaStencil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AllertaStencil-Regular.ttf"; sourceTree = "<group>"; };
 		DEFD98452353E065008B22AB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
@@ -156,6 +158,7 @@
 				DE92B0F4234A6A9000466B60 /* Store */,
 				DEFD984D2353E174008B22AB /* Controller */,
 				DE92B0C3234A69E700466B60 /* Assets.xcassets */,
+				DEED0DDA2354218C00B77994 /* GoogleService-Info.plist */,
 				DE92B0EE234A69F900466B60 /* README.md */,
 				DE92B0CB234A69E700466B60 /* Info.plist */,
 				DE92B0C5234A69E700466B60 /* Preview Content */,
@@ -234,6 +237,8 @@
 				DE92B0B6234A69E600466B60 /* Sources */,
 				DE92B0B7234A69E600466B60 /* Frameworks */,
 				DE92B0B8234A69E600466B60 /* Resources */,
+				AD3381F330404D9A6C875035 /* [CP] Embed Pods Frameworks */,
+				DEED0DD923541FF200B77994 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -271,6 +276,7 @@
 				DE92B0D7234A69E700466B60 /* Sources */,
 				DE92B0D8234A69E700466B60 /* Frameworks */,
 				DE92B0D9234A69E700466B60 /* Resources */,
+				CA20ABFB0BA98C20630B6491 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -336,6 +342,7 @@
 				DEFD9842235395C3008B22AB /* AllertaStencil-Regular.ttf in Resources */,
 				DE92B0F1234A69F900466B60 /* README.md in Resources */,
 				DE92B0C4234A69E700466B60 /* Assets.xcassets in Resources */,
+				DEED0DDB2354218C00B77994 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +385,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AD3381F330404D9A6C875035 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attest/Pods-Attest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attest/Pods-Attest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Attest/Pods-Attest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B52369C79C9DE21225A1FB86 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -399,6 +423,41 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		CA20ABFB0BA98C20630B6491 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attest-AttestUITests/Pods-Attest-AttestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Attest-AttestUITests/Pods-Attest-AttestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Attest-AttestUITests/Pods-Attest-AttestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEED0DD923541FF200B77994 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/Fabric/run\"\n";
 		};
 		F522129CE0EBDA87C7E5D8D0 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -600,6 +659,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Attest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NHB98B546;
 				ENABLE_PREVIEWS = YES;

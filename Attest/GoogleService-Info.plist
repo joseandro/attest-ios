@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>411157756265-a67h066593ggc1sb98bvtata7ii95nan.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.411157756265-a67h066593ggc1sb98bvtata7ii95nan</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDUpzV-tt-WssHgZvRNdKFxvu2-KLzuaYE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>411157756265</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.joseandro.Attest</string>
+	<key>PROJECT_ID</key>
+	<string>attest-c5ea3</string>
+	<key>STORAGE_BUCKET</key>
+	<string>attest-c5ea3.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:411157756265:ios:44dc0b384c8d7656b2a5f8</string>
+	<key>DATABASE_URL</key>
+	<string>https://attest-c5ea3.firebaseio.com</string>
+</dict>
+</plist>
