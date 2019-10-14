@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import FirebaseAnalytics
 
 struct ContentView: View {
     let fileCreationOpQueue : OperationQueue = {
@@ -165,9 +166,20 @@ struct ContentView: View {
     
     public func removeFiles(){
         if areFilesBeingDeleted == true {
+            Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+                AnalyticsParameterItemID: "id-remove-files-cancel",
+                AnalyticsParameterItemName: "Remove Files Cancel",
+                AnalyticsParameterContentType: "fileRemovalCancel"
+            ])
             fileDeletionOpQueue.cancelAllOperations()
             print("Requested it to end all delete ops")
         } else {
+            Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+                AnalyticsParameterItemID: "id-remove-files",
+                AnalyticsParameterItemName: "Remove Files",
+                AnalyticsParameterContentType: "fileRemoval"
+            ])
+
             print("Removing files")
             let operation = BlockOperation()
             operation.addExecutionBlock {
@@ -193,7 +205,19 @@ struct ContentView: View {
         if areFilesBeingCreated == true {
             fileCreationOpQueue.cancelAllOperations()
             print("Requested it to end all write ops")
+            Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+                AnalyticsParameterItemID: "id-device-fillup-cancel",
+                AnalyticsParameterItemName: "Fill Up Device Cancel",
+                AnalyticsParameterContentType: "fillUpCancel"
+            ])
+
         } else {
+            Analytics.logEvent(AnalyticsEventSelectContent, parameters: [
+                AnalyticsParameterItemID: "id-device-fillup",
+                AnalyticsParameterItemName: "Fill Up Device",
+                AnalyticsParameterContentType: "fillUp"
+            ])
+
             let operation = BlockOperation()
             operation.addExecutionBlock {
                 if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
