@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DE92B0B9234A69E600466B60"
-               BuildableName = "Attest.app"
-               BlueprintName = "Attest"
+               BuildableName = "Attesto.app"
+               BlueprintName = "Attesto"
                ReferencedContainer = "container:Attest.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -33,8 +33,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DE92B0CF234A69E700466B60"
-               BuildableName = "AttestTests.xctest"
-               BlueprintName = "AttestTests"
+               BuildableName = "AttestoTests.xctest"
+               BlueprintName = "AttestoTests"
                ReferencedContainer = "container:Attest.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -43,8 +43,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DE92B0DA234A69E700466B60"
-               BuildableName = "AttestUITests.xctest"
-               BlueprintName = "AttestUITests"
+               BuildableName = "AttestoUITests.xctest"
+               BlueprintName = "AttestoUITests"
                ReferencedContainer = "container:Attest.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -65,8 +65,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE92B0B9234A69E600466B60"
-            BuildableName = "Attest.app"
-            BlueprintName = "Attest"
+            BuildableName = "Attesto.app"
+            BlueprintName = "Attesto"
             ReferencedContainer = "container:Attest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -92,8 +92,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DE92B0B9234A69E600466B60"
-            BuildableName = "Attest.app"
-            BlueprintName = "Attest"
+            BuildableName = "Attesto.app"
+            BlueprintName = "Attesto"
             ReferencedContainer = "container:Attest.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

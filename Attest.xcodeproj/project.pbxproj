@@ -50,17 +50,17 @@
 		984D4B296D08DE8F058D80CA /* Pods-AttestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestTests.release.xcconfig"; path = "Target Support Files/Pods-AttestTests/Pods-AttestTests.release.xcconfig"; sourceTree = "<group>"; };
 		C4ACAB27942B1B3CE517224F /* Pods-Attest-AttestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attest-AttestUITests.release.xcconfig"; path = "Target Support Files/Pods-Attest-AttestUITests/Pods-Attest-AttestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DE23BC25234AC52700CEE0EB /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
-		DE92B0BA234A69E600466B60 /* Attest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE92B0BA234A69E600466B60 /* Attesto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attesto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE92B0BD234A69E600466B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE92B0BF234A69E600466B60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DE92B0C3234A69E700466B60 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DE92B0C6234A69E700466B60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE92B0C9234A69E700466B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE92B0CB234A69E700466B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE92B0D0234A69E700466B60 /* AttestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE92B0D0234A69E700466B60 /* AttestoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE92B0D4234A69E700466B60 /* AttestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestTests.swift; sourceTree = "<group>"; };
 		DE92B0D6234A69E700466B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE92B0DB234A69E700466B60 /* AttestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE92B0DB234A69E700466B60 /* AttestoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE92B0DF234A69E700466B60 /* AttestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestUITests.swift; sourceTree = "<group>"; };
 		DE92B0E1234A69E700466B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE92B0EE234A69F900466B60 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -143,9 +143,9 @@
 		DE92B0BB234A69E600466B60 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DE92B0BA234A69E600466B60 /* Attest.app */,
-				DE92B0D0234A69E700466B60 /* AttestTests.xctest */,
-				DE92B0DB234A69E700466B60 /* AttestUITests.xctest */,
+				DE92B0BA234A69E600466B60 /* Attesto.app */,
+				DE92B0D0234A69E700466B60 /* AttestoTests.xctest */,
+				DE92B0DB234A69E700466B60 /* AttestoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,9 +229,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE92B0B9234A69E600466B60 /* Attest */ = {
+		DE92B0B9234A69E600466B60 /* Attesto */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE92B0E4234A69E700466B60 /* Build configuration list for PBXNativeTarget "Attest" */;
+			buildConfigurationList = DE92B0E4234A69E700466B60 /* Build configuration list for PBXNativeTarget "Attesto" */;
 			buildPhases = (
 				B52369C79C9DE21225A1FB86 /* [CP] Check Pods Manifest.lock */,
 				DE92B0B6234A69E600466B60 /* Sources */,
@@ -244,14 +244,14 @@
 			);
 			dependencies = (
 			);
-			name = Attest;
+			name = Attesto;
 			productName = Attest;
-			productReference = DE92B0BA234A69E600466B60 /* Attest.app */;
+			productReference = DE92B0BA234A69E600466B60 /* Attesto.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DE92B0CF234A69E700466B60 /* AttestTests */ = {
+		DE92B0CF234A69E700466B60 /* AttestoTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE92B0E7234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestTests" */;
+			buildConfigurationList = DE92B0E7234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestoTests" */;
 			buildPhases = (
 				F522129CE0EBDA87C7E5D8D0 /* [CP] Check Pods Manifest.lock */,
 				DE92B0CC234A69E700466B60 /* Sources */,
@@ -263,14 +263,14 @@
 			dependencies = (
 				DE92B0D2234A69E700466B60 /* PBXTargetDependency */,
 			);
-			name = AttestTests;
+			name = AttestoTests;
 			productName = AttestTests;
-			productReference = DE92B0D0234A69E700466B60 /* AttestTests.xctest */;
+			productReference = DE92B0D0234A69E700466B60 /* AttestoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DE92B0DA234A69E700466B60 /* AttestUITests */ = {
+		DE92B0DA234A69E700466B60 /* AttestoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE92B0EA234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestUITests" */;
+			buildConfigurationList = DE92B0EA234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestoUITests" */;
 			buildPhases = (
 				395AE2ABE75E5341032F10D4 /* [CP] Check Pods Manifest.lock */,
 				DE92B0D7234A69E700466B60 /* Sources */,
@@ -283,9 +283,9 @@
 			dependencies = (
 				DE92B0DD234A69E700466B60 /* PBXTargetDependency */,
 			);
-			name = AttestUITests;
+			name = AttestoUITests;
 			productName = AttestUITests;
-			productReference = DE92B0DB234A69E700466B60 /* AttestUITests.xctest */;
+			productReference = DE92B0DB234A69E700466B60 /* AttestoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -325,9 +325,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE92B0B9234A69E600466B60 /* Attest */,
-				DE92B0CF234A69E700466B60 /* AttestTests */,
-				DE92B0DA234A69E700466B60 /* AttestUITests */,
+				DE92B0B9234A69E600466B60 /* Attesto */,
+				DE92B0CF234A69E700466B60 /* AttestoTests */,
+				DE92B0DA234A69E700466B60 /* AttestoUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -516,12 +516,12 @@
 /* Begin PBXTargetDependency section */
 		DE92B0D2234A69E700466B60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE92B0B9234A69E600466B60 /* Attest */;
+			target = DE92B0B9234A69E600466B60 /* Attesto */;
 			targetProxy = DE92B0D1234A69E700466B60 /* PBXContainerItemProxy */;
 		};
 		DE92B0DD234A69E700466B60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE92B0B9234A69E600466B60 /* Attest */;
+			target = DE92B0B9234A69E600466B60 /* Attesto */;
 			targetProxy = DE92B0DC234A69E700466B60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -659,6 +659,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Attest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NHB98B546;
@@ -668,9 +669,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.2;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joseandro.Attest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Attesto;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -685,6 +686,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Attest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NHB98B546;
 				ENABLE_PREVIEWS = YES;
@@ -693,9 +695,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.1.2;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joseandro.Attest;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Attesto;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -802,7 +804,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE92B0E4234A69E700466B60 /* Build configuration list for PBXNativeTarget "Attest" */ = {
+		DE92B0E4234A69E700466B60 /* Build configuration list for PBXNativeTarget "Attesto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE92B0E5234A69E700466B60 /* Debug */,
@@ -811,7 +813,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE92B0E7234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestTests" */ = {
+		DE92B0E7234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestoTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE92B0E8234A69E700466B60 /* Debug */,
@@ -820,7 +822,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE92B0EA234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestUITests" */ = {
+		DE92B0EA234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE92B0EB234A69E700466B60 /* Debug */,

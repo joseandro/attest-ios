@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Attest
+//  Attesto
 //
 //  Created by Joseandro Luiz on 13/10/19.
 //  Copyright © 2019 Joseandro Luiz. All rights reserved.
@@ -12,14 +12,14 @@ import FirebaseAnalytics
 struct ContentView: View {
     let fileCreationOpQueue : OperationQueue = {
       var queue = OperationQueue()
-      queue.name = "com.attest.file-creation-op-queue"
+      queue.name = "com.attesto.file-creation-op-queue"
       queue.maxConcurrentOperationCount = 1
       return queue
     }()
     
     let fileDeletionOpQueue : OperationQueue = {
         var queue = OperationQueue()
-        queue.name = "com.attest.file-deletion-op-queue"
+        queue.name = "com.attesto.file-deletion-op-queue"
         queue.maxConcurrentOperationCount = 1
         return queue
     }()
@@ -67,7 +67,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack{
-            Text("Attest")
+            Text("Attesto")
                 .font(Font.custom("AllertaStencil-Regular", size: 60))
                 .padding(.top, 10)
             Text("Fills up your storage space")
@@ -236,7 +236,7 @@ struct ContentView: View {
                         
                         fileURL.excludeFromBackup()
                         if !operation.isCancelled {
-                            self.error = AlertError(reason: "This is how far iOS allowed us to write to the disk.")
+                            self.error = AlertError(reason: "This is how far iOS allowed us to write to the disk. You may want to wait while iOS manages and reallocates its own storage space and then try again.")
                         }
                     } else {
                         print("Unable to open file")
