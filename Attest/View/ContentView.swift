@@ -221,28 +221,34 @@ struct ContentView: View {
             let operation = BlockOperation()
             operation.addExecutionBlock {
                 if let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first{
-                    var fileURL = dir.appendingPathComponent(UUID().uuidString)
+                    let data = Data(repeating: 7, count: 1_000_000)
+                    let bytes = (data as NSData).bytes.bindMemory(to: UInt8.self, capacity: data.count)
                     var output = 1
-                    print("Creating file \(fileURL)")
-                    if let outputStream = OutputStream(url: fileURL, append: true) {
-                        let data = Data(repeating: 7, count: 1_000_000)
-                        let bytes = (data as NSData).bytes.bindMemory(to: UInt8.self, capacity: data.count)
-
-                        outputStream.open()
-                        while (!operation.isCancelled && (output > 0) && (self.totalCapacity - output > 0)) {
-                            output = outputStream.write(data, bytes) //1MB
+                    while (!operation.isCancelled && (output > 0) && (self.totalCapacity > 0)) {
+                        var fileURL = dir.appendingPathComponent(UUID().uuidString)
+                        print("Creating file \(fileURL)")
+                        if let outputStream = OutputStream(url: fileURL, append: true) {
+                            outputStream.open()
+                            var totalWritten = 0
+                            while (!operation.isCancelled && (output > 0) && (totalWritten < 512_000_000)) {
+                                output = outputStream.write(data, bytes) //1MB
+                                totalWritten += output
+                            }
+                            outputStream.close()
+                            
+                            fileURL.excludeFromBackup()
+                        } else {
+                            print("Unable to open file")
+                            output = -2
+                            self.error = AlertError(reason: "We were unable to create files in this device, check if you have enough storage space.")
                         }
-                        outputStream.close()
-                        
-                        fileURL.excludeFromBackup()
-                        if !operation.isCancelled {
-                            self.error = AlertError(reason: "This is how far iOS allowed us to write to the disk. You may want to wait while iOS manages and reallocates its own storage space and then try again.")
-                        }
-                    } else {
-                        print("Unable to open file")
+                    }
+                    
+                    if !operation.isCancelled {
+                        self.error = AlertError(reason: "This is how far iOS allowed us to write to the disk. You may want to wait while iOS manages and reallocates its own storage space and then try again.")
                     }
                 } else {
-                    print("Unable to access storage")
+                    self.error = AlertError(reason: "We were unable to access this device storage space, check if you have enough storage space.")
                 }
                 self.areFilesBeingCreated = false
             }
