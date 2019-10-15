@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A0E03FEF517B8D2A71BC2B4 /* Pods_Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB0874D4D55C55B2259D7D87 /* Pods_Attest.framework */; };
-		641A5277C28AD908A87721FD /* Pods_Attest_AttestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 060D796ECBA548226D2DC07A /* Pods_Attest_AttestUITests.framework */; };
-		764326FBD2543C96920D6E48 /* Pods_AttestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930B7F02704E743A0820CB29 /* Pods_AttestTests.framework */; };
+		19F76E6C025D842A0762E60D /* Pods_AttestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86ED0F763240112811CE82ED /* Pods_AttestTests.framework */; };
+		A79E92D67312E1DDCF5CE0EB /* Pods_Attest_AttestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA5A85E97ABD1993BE8B31D0 /* Pods_Attest_AttestUITests.framework */; };
 		DE23BC26234AC52700CEE0EB /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE23BC25234AC52700CEE0EB /* Device.swift */; };
+		DE8FBABA235564E000FD8897 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE8FBAB9235564E000FD8897 /* GoogleService-Info.plist */; };
 		DE92B0BE234A69E600466B60 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92B0BD234A69E600466B60 /* AppDelegate.swift */; };
 		DE92B0C0234A69E600466B60 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92B0BF234A69E600466B60 /* SceneDelegate.swift */; };
 		DE92B0C4234A69E700466B60 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE92B0C3234A69E700466B60 /* Assets.xcassets */; };
@@ -19,9 +19,9 @@
 		DE92B0D5234A69E700466B60 /* AttestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92B0D4234A69E700466B60 /* AttestTests.swift */; };
 		DE92B0E0234A69E700466B60 /* AttestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE92B0DF234A69E700466B60 /* AttestUITests.swift */; };
 		DE92B0F1234A69F900466B60 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DE92B0EE234A69F900466B60 /* README.md */; };
-		DEED0DDB2354218C00B77994 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DEED0DDA2354218C00B77994 /* GoogleService-Info.plist */; };
 		DEFD984023538DB5008B22AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEFD983F23538DB4008B22AB /* ContentView.swift */; };
 		DEFD9842235395C3008B22AB /* AllertaStencil-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DEFD9841235395C3008B22AB /* AllertaStencil-Regular.ttf */; };
+		EBE2882C989A9CD3E62F06AE /* Pods_Attest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B19FE17304DA998E3CD636E /* Pods_Attest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,14 +42,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		060D796ECBA548226D2DC07A /* Pods_Attest_AttestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attest_AttestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2501068113AC31E45D4AC0AF /* Pods-Attest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attest.release.xcconfig"; path = "Target Support Files/Pods-Attest/Pods-Attest.release.xcconfig"; sourceTree = "<group>"; };
 		41DB511BACE4A4A2E6FFBE83 /* Pods-Attest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attest.debug.xcconfig"; path = "Target Support Files/Pods-Attest/Pods-Attest.debug.xcconfig"; sourceTree = "<group>"; };
+		74594D3999C70841EB0F3140 /* Pods-Attesto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attesto.release.xcconfig"; path = "Target Support Files/Pods-Attesto/Pods-Attesto.release.xcconfig"; sourceTree = "<group>"; };
+		86ED0F763240112811CE82ED /* Pods_AttestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		90BD4D1B009E433237DE5332 /* Pods-Attest-AttestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attest-AttestUITests.debug.xcconfig"; path = "Target Support Files/Pods-Attest-AttestUITests/Pods-Attest-AttestUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		930B7F02704E743A0820CB29 /* Pods_AttestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AttestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		984D4B296D08DE8F058D80CA /* Pods-AttestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestTests.release.xcconfig"; path = "Target Support Files/Pods-AttestTests/Pods-AttestTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B19FE17304DA998E3CD636E /* Pods_Attest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA5A85E97ABD1993BE8B31D0 /* Pods_Attest_AttestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attest_AttestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7924DD26AF632E299E70D74 /* Pods-Attesto-AttestoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attesto-AttestoUITests.release.xcconfig"; path = "Target Support Files/Pods-Attesto-AttestoUITests/Pods-Attesto-AttestoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4ACAB27942B1B3CE517224F /* Pods-Attest-AttestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attest-AttestUITests.release.xcconfig"; path = "Target Support Files/Pods-Attest-AttestUITests/Pods-Attest-AttestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D10E5A93BC4CA6408D77B37B /* Pods-Attesto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attesto.debug.xcconfig"; path = "Target Support Files/Pods-Attesto/Pods-Attesto.debug.xcconfig"; sourceTree = "<group>"; };
+		D5D6E9E3AB3F51AA46CE2898 /* Pods-Attesto-AttestoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Attesto-AttestoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Attesto-AttestoUITests/Pods-Attesto-AttestoUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DE23BC25234AC52700CEE0EB /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		DE8FBAB9235564E000FD8897 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DE92B0BA234A69E600466B60 /* Attesto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Attesto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE92B0BD234A69E600466B60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DE92B0BF234A69E600466B60 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,20 +63,20 @@
 		DE92B0C6234A69E700466B60 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DE92B0C9234A69E700466B60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DE92B0CB234A69E700466B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE92B0D0234A69E700466B60 /* AttestoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE92B0D0234A69E700466B60 /* AttestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE92B0D4234A69E700466B60 /* AttestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestTests.swift; sourceTree = "<group>"; };
 		DE92B0D6234A69E700466B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DE92B0DB234A69E700466B60 /* AttestoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE92B0DB234A69E700466B60 /* AttestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AttestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE92B0DF234A69E700466B60 /* AttestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttestUITests.swift; sourceTree = "<group>"; };
 		DE92B0E1234A69E700466B60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DE92B0EE234A69F900466B60 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		DEED0DDA2354218C00B77994 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DEFD983F23538DB4008B22AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DEFD9841235395C3008B22AB /* AllertaStencil-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "AllertaStencil-Regular.ttf"; sourceTree = "<group>"; };
 		DEFD98452353E065008B22AB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		DEFD98472353E075008B22AB /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		DEFD98492353E07F008B22AB /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		EB0874D4D55C55B2259D7D87 /* Pods_Attest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Attest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB7B6BD2A5780F6934773D8B /* Pods-AttestoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestoTests.debug.xcconfig"; path = "Target Support Files/Pods-AttestoTests/Pods-AttestoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F15458653DBFFD5F8134B907 /* Pods-AttestoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestoTests.release.xcconfig"; path = "Target Support Files/Pods-AttestoTests/Pods-AttestoTests.release.xcconfig"; sourceTree = "<group>"; };
 		FA6C8E15E693259D1FFB74FB /* Pods-AttestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AttestTests.debug.xcconfig"; path = "Target Support Files/Pods-AttestTests/Pods-AttestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A0E03FEF517B8D2A71BC2B4 /* Pods_Attest.framework in Frameworks */,
+				EBE2882C989A9CD3E62F06AE /* Pods_Attest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				764326FBD2543C96920D6E48 /* Pods_AttestTests.framework in Frameworks */,
+				19F76E6C025D842A0762E60D /* Pods_AttestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				641A5277C28AD908A87721FD /* Pods_Attest_AttestUITests.framework in Frameworks */,
+				A79E92D67312E1DDCF5CE0EB /* Pods_Attest_AttestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +117,12 @@
 				C4ACAB27942B1B3CE517224F /* Pods-Attest-AttestUITests.release.xcconfig */,
 				FA6C8E15E693259D1FFB74FB /* Pods-AttestTests.debug.xcconfig */,
 				984D4B296D08DE8F058D80CA /* Pods-AttestTests.release.xcconfig */,
+				D10E5A93BC4CA6408D77B37B /* Pods-Attesto.debug.xcconfig */,
+				74594D3999C70841EB0F3140 /* Pods-Attesto.release.xcconfig */,
+				D5D6E9E3AB3F51AA46CE2898 /* Pods-Attesto-AttestoUITests.debug.xcconfig */,
+				B7924DD26AF632E299E70D74 /* Pods-Attesto-AttestoUITests.release.xcconfig */,
+				EB7B6BD2A5780F6934773D8B /* Pods-AttestoTests.debug.xcconfig */,
+				F15458653DBFFD5F8134B907 /* Pods-AttestoTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -121,9 +133,9 @@
 				DEFD98492353E07F008B22AB /* AdSupport.framework */,
 				DEFD98472353E075008B22AB /* StoreKit.framework */,
 				DEFD98452353E065008B22AB /* CoreMotion.framework */,
-				EB0874D4D55C55B2259D7D87 /* Pods_Attest.framework */,
-				060D796ECBA548226D2DC07A /* Pods_Attest_AttestUITests.framework */,
-				930B7F02704E743A0820CB29 /* Pods_AttestTests.framework */,
+				9B19FE17304DA998E3CD636E /* Pods_Attest.framework */,
+				AA5A85E97ABD1993BE8B31D0 /* Pods_Attest_AttestUITests.framework */,
+				86ED0F763240112811CE82ED /* Pods_AttestTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -144,8 +156,8 @@
 			isa = PBXGroup;
 			children = (
 				DE92B0BA234A69E600466B60 /* Attesto.app */,
-				DE92B0D0234A69E700466B60 /* AttestoTests.xctest */,
-				DE92B0DB234A69E700466B60 /* AttestoUITests.xctest */,
+				DE92B0D0234A69E700466B60 /* AttestTests.xctest */,
+				DE92B0DB234A69E700466B60 /* AttestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,7 +170,7 @@
 				DE92B0F4234A6A9000466B60 /* Store */,
 				DEFD984D2353E174008B22AB /* Controller */,
 				DE92B0C3234A69E700466B60 /* Assets.xcassets */,
-				DEED0DDA2354218C00B77994 /* GoogleService-Info.plist */,
+				DE8FBAB9235564E000FD8897 /* GoogleService-Info.plist */,
 				DE92B0EE234A69F900466B60 /* README.md */,
 				DE92B0CB234A69E700466B60 /* Info.plist */,
 				DE92B0C5234A69E700466B60 /* Preview Content */,
@@ -229,9 +241,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DE92B0B9234A69E600466B60 /* Attesto */ = {
+		DE92B0B9234A69E600466B60 /* Attest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE92B0E4234A69E700466B60 /* Build configuration list for PBXNativeTarget "Attesto" */;
+			buildConfigurationList = DE92B0E4234A69E700466B60 /* Build configuration list for PBXNativeTarget "Attest" */;
 			buildPhases = (
 				B52369C79C9DE21225A1FB86 /* [CP] Check Pods Manifest.lock */,
 				DE92B0B6234A69E600466B60 /* Sources */,
@@ -244,14 +256,14 @@
 			);
 			dependencies = (
 			);
-			name = Attesto;
+			name = Attest;
 			productName = Attest;
 			productReference = DE92B0BA234A69E600466B60 /* Attesto.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DE92B0CF234A69E700466B60 /* AttestoTests */ = {
+		DE92B0CF234A69E700466B60 /* AttestTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE92B0E7234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestoTests" */;
+			buildConfigurationList = DE92B0E7234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestTests" */;
 			buildPhases = (
 				F522129CE0EBDA87C7E5D8D0 /* [CP] Check Pods Manifest.lock */,
 				DE92B0CC234A69E700466B60 /* Sources */,
@@ -263,14 +275,14 @@
 			dependencies = (
 				DE92B0D2234A69E700466B60 /* PBXTargetDependency */,
 			);
-			name = AttestoTests;
+			name = AttestTests;
 			productName = AttestTests;
-			productReference = DE92B0D0234A69E700466B60 /* AttestoTests.xctest */;
+			productReference = DE92B0D0234A69E700466B60 /* AttestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		DE92B0DA234A69E700466B60 /* AttestoUITests */ = {
+		DE92B0DA234A69E700466B60 /* AttestUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DE92B0EA234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestoUITests" */;
+			buildConfigurationList = DE92B0EA234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestUITests" */;
 			buildPhases = (
 				395AE2ABE75E5341032F10D4 /* [CP] Check Pods Manifest.lock */,
 				DE92B0D7234A69E700466B60 /* Sources */,
@@ -283,9 +295,9 @@
 			dependencies = (
 				DE92B0DD234A69E700466B60 /* PBXTargetDependency */,
 			);
-			name = AttestoUITests;
+			name = AttestUITests;
 			productName = AttestUITests;
-			productReference = DE92B0DB234A69E700466B60 /* AttestoUITests.xctest */;
+			productReference = DE92B0DB234A69E700466B60 /* AttestUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -325,9 +337,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DE92B0B9234A69E600466B60 /* Attesto */,
-				DE92B0CF234A69E700466B60 /* AttestoTests */,
-				DE92B0DA234A69E700466B60 /* AttestoUITests */,
+				DE92B0B9234A69E600466B60 /* Attest */,
+				DE92B0CF234A69E700466B60 /* AttestTests */,
+				DE92B0DA234A69E700466B60 /* AttestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,7 +354,7 @@
 				DEFD9842235395C3008B22AB /* AllertaStencil-Regular.ttf in Resources */,
 				DE92B0F1234A69F900466B60 /* README.md in Resources */,
 				DE92B0C4234A69E700466B60 /* Assets.xcassets in Resources */,
-				DEED0DDB2354218C00B77994 /* GoogleService-Info.plist in Resources */,
+				DE8FBABA235564E000FD8897 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,12 +528,12 @@
 /* Begin PBXTargetDependency section */
 		DE92B0D2234A69E700466B60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE92B0B9234A69E600466B60 /* Attesto */;
+			target = DE92B0B9234A69E600466B60 /* Attest */;
 			targetProxy = DE92B0D1234A69E700466B60 /* PBXContainerItemProxy */;
 		};
 		DE92B0DD234A69E700466B60 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DE92B0B9234A69E600466B60 /* Attesto */;
+			target = DE92B0B9234A69E600466B60 /* Attest */;
 			targetProxy = DE92B0DC234A69E700466B60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -659,7 +671,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"Attest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NHB98B546;
@@ -669,7 +681,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.1;
+				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joseandro.Attest;
 				PRODUCT_NAME = Attesto;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -686,7 +698,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"Attest/Preview Content\"";
 				DEVELOPMENT_TEAM = 7NHB98B546;
 				ENABLE_PREVIEWS = YES;
@@ -695,7 +707,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.2.1;
+				MARKETING_VERSION = 0.3;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joseandro.Attest;
 				PRODUCT_NAME = Attesto;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -804,7 +816,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE92B0E4234A69E700466B60 /* Build configuration list for PBXNativeTarget "Attesto" */ = {
+		DE92B0E4234A69E700466B60 /* Build configuration list for PBXNativeTarget "Attest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE92B0E5234A69E700466B60 /* Debug */,
@@ -813,7 +825,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE92B0E7234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestoTests" */ = {
+		DE92B0E7234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE92B0E8234A69E700466B60 /* Debug */,
@@ -822,7 +834,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DE92B0EA234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestoUITests" */ = {
+		DE92B0EA234A69E700466B60 /* Build configuration list for PBXNativeTarget "AttestUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DE92B0EB234A69E700466B60 /* Debug */,

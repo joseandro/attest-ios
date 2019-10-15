@@ -3,23 +3,23 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>411157756265-a67h066593ggc1sb98bvtata7ii95nan.apps.googleusercontent.com</string>
+	<string>916360056673-l9h1vron4ise9e02srg6n59vhragj6jh.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.411157756265-a67h066593ggc1sb98bvtata7ii95nan</string>
+	<string>com.googleusercontent.apps.916360056673-l9h1vron4ise9e02srg6n59vhragj6jh</string>
 	<key>API_KEY</key>
-	<string>AIzaSyDUpzV-tt-WssHgZvRNdKFxvu2-KLzuaYE</string>
+	<string>AIzaSyC8w4xvbKz-j7pZgWV49GbFacqTZNr6SN4</string>
 	<key>GCM_SENDER_ID</key>
-	<string>411157756265</string>
+	<string>916360056673</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.joseandro.Attesto</string>
+	<string>com.joseandro.Attest</string>
 	<key>PROJECT_ID</key>
-	<string>attest-c5ea3</string>
+	<string>attesto</string>
 	<key>STORAGE_BUCKET</key>
-	<string>attest-c5ea3.appspot.com</string>
+	<string>attesto.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<true/>
 	<key>IS_APPINVITE_ENABLED</key>
@@ -29,8 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:411157756265:ios:44dc0b384c8d7656b2a5f8</string>
+	<string>1:916360056673:ios:b705e06cf87728094d7f20</string>
 	<key>DATABASE_URL</key>
-	<string>https://attest-c5ea3.firebaseio.com</string>
+	<string>https://attesto.firebaseio.com</string>
 </dict>
 </plist>

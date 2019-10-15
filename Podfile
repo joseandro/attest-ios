@@ -1,5 +1,6 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '13.0'
+project 'Attest.xcodeproj'
 
 target 'Attest' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -12,7 +13,7 @@ target 'Attest' do
 
   # (Recommended) Pod for Google Analytics
   pod 'Firebase/Analytics'
-
+  pod 'Firebase/AdMob'
 
   target 'AttestTests' do
     inherit! :search_paths

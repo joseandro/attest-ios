@@ -8,6 +8,24 @@
 
 import SwiftUI
 import FirebaseAnalytics
+import GoogleMobileAds
+import UIKit
+
+struct GADBannerViewController: UIViewControllerRepresentable {
+    func makeUIViewController(context: Context) -> UIViewController {
+        let view = GADBannerView(adSize: kGADAdSizeBanner)
+        let viewController = UIViewController()
+        view.adUnitID = "ca-app-pub-7325018484688424/2387702452" //PROD
+//        view.adUnitID = "ca-app-pub-3940256099942544/2934735716" //TEST
+        view.rootViewController = viewController
+        viewController.view.addSubview(view)
+        viewController.view.frame = CGRect(origin: .zero, size: kGADAdSizeBanner.size)
+        view.load(GADRequest())
+        return viewController
+    }
+
+    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
+}
 
 struct ContentView: View {
     let fileCreationOpQueue : OperationQueue = {
@@ -134,8 +152,9 @@ struct ContentView: View {
                         .padding(.horizontal, 20)
                         .transition(.opacity)
                         .animation(.default)
-                        
                     }.disabled((areFilesBeingCreated))
+                    GADBannerViewController()
+                        .frame(width: kGADAdSizeBanner.size.width, height: kGADAdSizeBanner.size.height)
                 }
                 .padding(.bottom, 10)
             } else {
