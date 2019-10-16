@@ -116,7 +116,7 @@ struct ContentView: View {
                                 .font(.title)
                                 .padding(.trailing, 10)
                                 .animation(.easeOut(duration: 1))
-                            Text(areFilesBeingCreated ? "Stop it" : "Fill space")
+                            Text(areFilesBeingCreated ? "Stop it" : "Fill up device space")
                                 .fontWeight(.semibold)
                                 .font(.subheadline)
                                 .animation(.easeOut(duration: 1))
@@ -141,7 +141,7 @@ struct ContentView: View {
                                 .font(.title)
                                 .padding(.trailing, 10)
                             
-                            Text(areFilesBeingDeleted ? "Stop it" : "Purge files")
+                            Text(areFilesBeingDeleted ? "Stop it" : "Remove Attesto files")
                                 .fontWeight(.semibold)
                                 .font(.subheadline)
                         }
