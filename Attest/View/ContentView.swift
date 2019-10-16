@@ -115,11 +115,9 @@ struct ContentView: View {
                             Image(systemName: areFilesBeingCreated ? "nosign" : "flame")
                                 .font(.title)
                                 .padding(.trailing, 10)
-                                .animation(.easeOut(duration: 1))
                             Text(areFilesBeingCreated ? "Stop it" : "Fill up device space")
                                 .fontWeight(.semibold)
                                 .font(.subheadline)
-                                .animation(.easeOut(duration: 1))
                         }
                         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 20, maxHeight: 20)
                         .padding()
